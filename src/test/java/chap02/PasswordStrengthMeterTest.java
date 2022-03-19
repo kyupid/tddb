@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 public class PasswordStrengthMeterTest {
 
     @Test
-    void name() {
+    void meetsAllCriteria_Then_Strong() {
 
     }
 }
