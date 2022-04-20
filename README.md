@@ -5,7 +5,7 @@
 - [[Chap03] 구독서비스 납부일과 만료일 연장일 구현 로직 TDD](https://github.com/kyupid/tddb/pull/3)
   - [[Chap03] 상수를 넣어 테스트를 통과시키고 일반화해라](https://github.com/kyupid/tddb/discussions/2)
 - [[Chap04] TDD를 통해 기능 명세를 구체화 시킬 수 있다](https://github.com/kyupid/tddb/discussions/4)
-- Chap05
+- [[Chap05] JUnit5 기초: 테스트 메서드는 독립적이어야 한다](https://velog.io/@kyukim/TDD%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0Chap05)
 - Chap06
 - Chap07
 - Chap08
