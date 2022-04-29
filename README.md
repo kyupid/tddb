@@ -6,7 +6,7 @@
   - [[Chap03] 상수를 넣어 테스트를 통과시키고 일반화해라](https://github.com/kyupid/tddb/discussions/2)
 - [[Chap04] TDD를 통해 기능 명세를 구체화 시킬 수 있다](https://github.com/kyupid/tddb/discussions/4)
 - [[Chap05] JUnit5 기초: 테스트 메서드는 독립적이어야 한다](https://velog.io/@kyukim/TDD%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0Chap05)
-- Chap06
+- [[Chap06] 외부API를 쓰는 상황에서도 독립적으로 테스트 할 수 있어야하는데..](https://velog.io/@kyukim/Chap06)
 - Chap07
 - Chap08
 - Chap09
