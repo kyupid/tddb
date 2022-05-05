@@ -4,6 +4,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static chap07.CardValidity.INVALID;
+import static chap07.CardValidity.THEFT;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class AutoDebitRegister_Stub_Test {
@@ -26,5 +27,15 @@ public class AutoDebitRegister_Stub_Test {
         RegisterResult result = register.register(req);
 
         assertEquals(INVALID, result.getValidity());
+    }
+
+    @Test
+    void theftCard() {
+        stubValidator.setTheftNo("123456");
+
+        AutoDebitReq req = new AutoDebitReq("user1", "123456");
+        RegisterResult result = register.register(req);
+
+        assertEquals(THEFT, result.getValidity());
     }
 }
