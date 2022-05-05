@@ -1,15 +1,21 @@
 package chap07;
 
 public class RegisterResult {
+    public CardValidity validity;
+
+    public RegisterResult(CardValidity validity) {
+        this.validity = validity;
+    }
+
     public static RegisterResult error(CardValidity validity) {
-        return null;
+        return new RegisterResult(validity);
     }
 
     public static RegisterResult success() {
-        return null;
+        return new RegisterResult(CardValidity.VALID);
     }
 
     public CardValidity getValidity() {
-        return CardValidity.INVALID;
+        return this.validity;
     }
 }
