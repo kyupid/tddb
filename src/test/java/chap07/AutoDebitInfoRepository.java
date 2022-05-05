@@ -2,14 +2,12 @@ package chap07;
 
 import java.util.Map;
 
-public class AutoDebitInfoRepository {
-    private Map<String, AutoDebitInfo> autoDebitInfo;
+/**
+ * 인터페이스로 사용하여 JpaAutoDebitInfoRepository와
+ * Memory...Repository로 분리
+ */
+public interface AutoDebitInfoRepository {
+    void save(AutoDebitInfo newInfo);
 
-    public void save(AutoDebitInfo newInfo) {
-        this.autoDebitInfo.put(newInfo.getUserId(), newInfo);
-    }
-
-    public AutoDebitInfo findOne(String userId) {
-        return this.autoDebitInfo.get(userId);
-    }
+    AutoDebitInfo findOne(String userId);
 }
